@@ -14,5 +14,12 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
 const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
-db.tutorials = require("./tutorial.model.js")(sequelize, Sequelize);
+db.personaje = require("./personaje.model.js")(sequelize, Sequelize);
+db.genero = require("./genero.model.js")(sequelize, Sequelize);
+db.peliculaSerie = require("./peliculaSerie.model.js")(sequelize, Sequelize);
+
+db.peliculaSerie.hasMany(db.personaje)
+db.genero.hasMany(db.peliculaSerie)
+db.personaje.hasMany(this.peliculaSerie)
+
 module.exports = db;
