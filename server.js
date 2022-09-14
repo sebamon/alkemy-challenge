@@ -22,19 +22,14 @@ if(process.env.NODE_ENV !== "production"){
     require('dotenv/config')
 }
 
-
-
-
-
-
-const db = require('./app/models')
-db.sequelize.sync()
-    .then( () => {
-        console.log('Sync Db')
-    })
-    .catch((err) => {
-        console.log('Error sunc db: '+err.message)
-    })
+// const db = require('./app/models')
+// db.sequelize.sync()
+//     .then( () => {
+//         console.log('Sync Db')
+//     })
+//     .catch((err) => {
+//         console.log('Error sunc db: '+err.message)
+//     })
 
 
 //Rutas

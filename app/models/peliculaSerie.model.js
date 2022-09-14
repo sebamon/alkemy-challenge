@@ -1,10 +1,5 @@
 const { Sequelize, DataTypes } = requiere('sequelize')
 
-const sequelize = new Sequelize('database', 'username', 'password' , {
-    host: 'localhost',
-    dialect : mariadb
-})
-
 export const PeliculaSerie = sequelize.define('PeliculaSerie', {
     imagen: {
         type: DataTypes.STRING,

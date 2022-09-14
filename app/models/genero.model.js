@@ -1,11 +1,5 @@
 const { Sequelize, DataTypes } = requiere('sequelize')
 
-const sequelize = new Sequelize('database', 'username', 'password' , {
-    host: 'localhost',
-    dialect : mariadb
-})
-
-
 export const Genero = sequelize.define('Genero', {
     nombre: {
         type: DataTypes.STRING,

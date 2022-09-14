@@ -1,0 +1,39 @@
+Acomodar las carpetas
+Cliente - Servidor? 
+App ? 
+
+1) Sequelize - No Levanta
+
+2) Autenticación - Registro y Login
+
+3) EndPoint:
+
+/characters
+    Listado por Nombre e Imagen
+
+4) CRUD Personaje
+
+5) Detalle Personaje con sus películas
+
+6) Busqueda Personaje 
+        Por nombre, filtro edad, peso, películas
+        filtros como parametros de query
+GET /characters?name=nombre
+GET /characters?age=edad
+GET /characters?movies=idMovie
+
+7) Listado Películas (Imagen, Título y fecha Creación)
+endpoint: GET /movies
+
+8) Detalle de Peliculas y sus personajes
+
+9) CRUD Peliculas
+
+10) Busqueda de Películas
+GET /movies?name=nombre
+GET /movies?genre=idGenero
+GET /movies?order=ASC | DESC
+
+
+11) Envío de Emails
+Ver SendGrid
